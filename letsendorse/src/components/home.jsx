@@ -12,6 +12,8 @@ const Left = styled.div`
   width: 40%;
   padding: 20px;
   border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
 `;
 const Right = styled.div`
   width: 60%;
