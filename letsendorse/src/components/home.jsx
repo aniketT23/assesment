@@ -22,6 +22,11 @@ const Right = styled.div`
 `;
 
 export const Home = () => {
+  const [name, setName] = useState("Aniket Tiwari");
+  const [business_idea, setBusiness_idea] = useState(
+    "Devloping Automation in healtcare"
+  );
+  const [city, setCity] = useState("Gurgaon");
   const [business_stage, setBusiness_stage] = useState("");
   const [age_of_establishment, setAge_of_establishment] = useState(0);
   const [primary_product_service_offered, setPrimary_product_service_offered] =
@@ -394,124 +399,107 @@ export const Home = () => {
           </form>
         </Left>
         <Right>
-          <h1>DATA</h1>
+          <h1>Render Data</h1>
           <div style={{ textAlign: "left" }}>
             <span>
-              <b>business_stage :</b> {business_stage}
+              <b>{name}</b> is looking to <b>{business_stage}</b> their business
+              of <b>{business_idea}</b>
             </span>
             <br />{" "}
             <span>
               {" "}
-              <b>Age of establishment (years) : </b> {age_of_establishment}
+              This enterprise has been operational since{" "}
+              <b>{age_of_establishment} </b>years and has been serving its
+              customers since then.{" "}
+            </span>
+            <br />{" "}
+            <span>
+              This establishment offers products/services like-{" "}
+              <b>{primary_product_service_offered}</b> to <b>{offered_to}.</b>
+            </span>
+            <br />{" "}
+            <span>
+              In addition, the enterprise shall also be involved in-{" "}
+              <b>{secondary_product_service_offered}</b>
+            </span>
+            <br />
+            <span>
+              Other products of the enterprise shall include-{" "}
+              <b>{processed_products}</b>
             </span>
             <br />{" "}
             <span>
               {" "}
-              <b>primary_product_service_offered: </b>{" "}
-              {primary_product_service_offered}
+              <b>{name}</b> has relevant experience of{" "}
+              <b>{relevant_experience}</b> years in this field.
             </span>
             <br />{" "}
             <span>
-              {" "}
-              <b>Offered to: </b> {offered_to}
-            </span>
-            <br />{" "}
-            <span>
-              {" "}
-              <b>Secondary Products/Services offfered : </b>{" "}
-              {secondary_product_service_offered}{" "}
-            </span>
-            <br />{" "}
-            <span>
-              {" "}
-              <b>Processed products : </b> {processed_products}
-            </span>
-            <br />{" "}
-            <span>
-              <b> Years of relevant experience in this field : </b>{" "}
-              {relevant_experience}{" "}
-            </span>
-            <br />{" "}
-            <span>
-              {" "}
-              <b>Skill training: </b> {skill_training}
-            </span>
-            <br />{" "}
-            <span>
-              <b>Unique Selling Proposition : </b> {usp}{" "}
-            </span>
-            <br />{" "}
-            <span>
-              {" "}
-              <b>Establishment type : </b> {establishment_type}
-            </span>
-            <br />{" "}
-            <span>
-              {" "}
-              <b>Name of the area : </b> {business_area}
-            </span>
-            <br />{" "}
-            <span>
-              {" "}
-              <b>Locality of business : </b> {business_locality}
-            </span>
-            <br />{" "}
-            <span>
-              {" "}
-              <b>Ownership of infrastructure : </b>
-              {infra_ownership}
-            </span>
-            <br />{" "}
-            <span>
-              {" "}
-              <b>Establishment area : </b> {establishment_area}
+              The entrepreneur <b>{skill_training} </b>in this field of work.{" "}
             </span>
             <br />
             <span>
               {" "}
-              <b>reason_for_location : </b> {reason_for_location}
+              The <b>{establishment_type}</b> is located in{" "}
+              <b>{business_locality}</b> area of <b>{city}</b> in a{" "}
+              <b>{infra_ownership}</b> property.
+            </span>
+            <br />
+            <span>
+              The size of the establishment is <b>{establishment_area}</b>{" "}
+              sq.ft.
+            </span>
+            <br />
+            <span>
+              <b>Establishment type : </b> {establishment_type}
+            </span>
+            <br />{" "}
+            <span>
+              This locality is selected because of <b>{reason_for_location}</b>
+            </span>
+            <br />{" "}
+            <span>
+              <b>{market_research}</b> and the range of products and target
+              market has been identified after that.
+            </span>
+            <br />{" "}
+            <span>
+              The enterprise shall focus on offering its products/services to{" "}
+              <b>{primary_market}</b> markets.
+            </span>
+            <br />
+            <span>
+              {" "}
+              Our customers shall include- <b>{customers}</b>
+            </span>
+            <br />
+            <span>
+              The nature of the business is such that we expect{" "}
+              <b>{seasonality}</b>
             </span>
           </div>
           <div style={{ textAlign: "left", marginTop: "20px" }}>
             <br />{" "}
             <span>
               {" "}
-              <b>Market research: </b> {market_research}{" "}
+              Regarding competition, there are <b>{competition}</b>.
+            </span>
+            <br />{" "}
+            <span>
+              The enterprise shall procure goods/raw materials from{" "}
+              <b>{suppliers}</b>.
             </span>
             <br />{" "}
             <span>
               {" "}
-              <b>Primary market : </b> {primary_market}
+              Our marketing avenues to reach the targeted customers shall
+              include <b>{marketing_avenues}</b>
             </span>
             <br />{" "}
             <span>
-              {" "}
-              <b>Customers: </b> {customers}
-            </span>
-            <br />{" "}
-            <span>
-              {" "}
-              <b>Seasons of high sales:</b> {seasonality}
-            </span>
-            <br />{" "}
-            <span>
-              {" "}
-              <b>Competition : </b> {competition}
-            </span>
-            <br />{" "}
-            <span>
-              {" "}
-              <b> List of Suppliers :</b> {suppliers}
-            </span>
-            <br />
-            <span>
-              {" "}
-              <b>marketing_avenues : </b> {marketing_avenues}
-            </span>
-            <br />{" "}
-            <span>
-              {" "}
-              <b>Scaleup_potentials: </b> {scaleup_potential}
+              The various foreseeable avenues of scaling up and growing the
+              business in the foreseeable future include{" "}
+              <b>{scaleup_potential}</b>
             </span>
           </div>
         </Right>
